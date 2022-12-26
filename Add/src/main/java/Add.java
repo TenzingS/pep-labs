@@ -1,4 +1,3 @@
-
 public class Add {
     /**
      * Let's say we're making a calculator app!
@@ -10,7 +9,8 @@ public class Add {
      * @param b second number to be added.
      * @return the sum of a and b.
      */
+    
     public int addNumbers(int a, int b){
-        return 0;
+        return a+b;
     }
 }
