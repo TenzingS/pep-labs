@@ -4,8 +4,8 @@
 -------------------------------------------------------
 Picked up JAVA_TOOL_OPTIONS:  -Xmx3489m
 Running ReturnArrayContentsTest
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec <<< FAILURE!
-arrayStringTest1(ReturnArrayContentsTest)  Time elapsed: 0.103 sec  <<< FAILURE!
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.794 sec <<< FAILURE!
+arrayStringTest1(ReturnArrayContentsTest)  Time elapsed: 0.1 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<1[ 2 3 4 ]5> but was:<1[234]5>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
