@@ -1,4 +1,3 @@
-
 public class CustomExceptionThrower {
 
     /**
@@ -8,8 +7,18 @@ public class CustomExceptionThrower {
      *
      * I recommend looking at the test case for a good example of try/catch block usage, as well.
      */
-    public void throwCustomException(){
-
+    public void throwCustomException()throws CustomException{
+        try  
+        {  
+            // throw an object of user defined exception  
+            throw new CustomException();  
+        }  
+        catch (CustomException ex)  
+        {  
+            System.out.println("Caught the exception");  
+            System.out.println(ex.getMessage());  
+        }  
+  
+        System.out.println("rest of the code...");    
     }
-
 }
