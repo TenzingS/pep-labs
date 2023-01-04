@@ -6,19 +6,15 @@ public class CustomExceptionThrower {
      * exceptions could provide valuable information for when something goes wrong in the application.
      *
      * I recommend looking at the test case for a good example of try/catch block usage, as well.
+     * @return 
      */
-    public void throwCustomException()throws CustomException{
-        try  
-        {  
-            // throw an object of user defined exception  
-            throw new CustomException();  
-        }  
-        catch (CustomException ex)  
-        {  
-            System.out.println("Caught the exception");  
-            System.out.println(ex.getMessage());  
-        }  
-  
-        System.out.println("rest of the code...");    
+    public int throwCustomException(int a, int b) throws CustomException {
+        if(a%2 == 0){
+            throw new CustomException("First input was even!");
+        } else if(b%2 == 0){
+            throw new CustomException("Second Input was even!");
+        }
+        return a+b;
     }
+
 }
