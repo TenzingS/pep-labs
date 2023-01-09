@@ -1,5 +1,6 @@
 
 public class Runner {
+
     /**
      * This challenge is about interacting with static variables.
      *
@@ -21,7 +22,7 @@ public class Runner {
      *
      * @param in the String value you should change global_var to in.
      */
-    public void changeClassVar(String in){
-
+    public static void changeClassVar(String in){
+        Class.global_var = in;
     }
 }
