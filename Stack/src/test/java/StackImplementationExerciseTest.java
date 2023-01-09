@@ -3,7 +3,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.Deque;
-import java.util.Stack;
 
 public class StackImplementationExerciseTest {
     static StackExercise se;
@@ -74,8 +73,8 @@ public class StackImplementationExerciseTest {
             se.addToTopOfStack(stack, "Finnegan's Wake");
             se.addToTopOfStack(stack, "Don Quixote");
             String bookName = se.removeFromTopOfStack(stack);
-            Assert.assertEquals(se.getSize(stack), 2);
-            Assert.assertEquals(bookName, "Don Quixote");
+            Assert.assertEquals(2, se.getSize(stack));
+            Assert.assertEquals("Don Quixote", bookName);
         }
     }
     /**
@@ -92,10 +91,10 @@ public class StackImplementationExerciseTest {
             se.addToTopOfStack(stack, "Finnegan's Wake");
             se.addToTopOfStack(stack, "Don Quixote");
             String bookName = se.removeFromTopOfStack(stack);
-            Assert.assertEquals(bookName, "Don Quixote");
+            Assert.assertEquals("Don Quixote", bookName);
             bookName = se.removeFromTopOfStack(stack);
-            Assert.assertEquals(se.getSize(stack), 1);
-            Assert.assertEquals(bookName, "Finnegan's Wake");
+            Assert.assertEquals(1, se.getSize(stack));
+            Assert.assertEquals("Finnegan's Wake", bookName);
         }
     }
 
@@ -112,8 +111,8 @@ public class StackImplementationExerciseTest {
             se.addToTopOfStack(stack, "Finnegan's Wake");
             se.addToTopOfStack(stack, "Don Quixote");
             String bookName = se.getTopOfStackWithoutRemoving(stack);
-            Assert.assertEquals(bookName, "Don Quixote");
-            Assert.assertEquals(se.getSize(stack), 3);
+            Assert.assertEquals("Don Quixote", bookName);
+            Assert.assertEquals(3, se.getSize(stack));
         }
     }
 }
