@@ -57,8 +57,18 @@ public class SampleClass {
 
     //    implement a custom .equals(SampleClass other){} method here.
 
+    public boolean equals(Object obj){
+        if(this == obj) return true;
+        if(obj == null || obj.getClass() != this.getClass()) return false;
+
+        SampleClass sample = (SampleClass) obj;
+        return sample.a == a && sample.b == b;
+    }
+
 
     //    implement a custom .toString(){} method here.
-
+    public String toString(){
+        return a + " is the" + b + "number!";
+    }
     
 }
