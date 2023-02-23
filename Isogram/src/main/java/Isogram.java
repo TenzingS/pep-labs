@@ -1,4 +1,3 @@
-
 public class Isogram {
     /**
      * An Isogram is a word where no letters are repeated. You may assume that there will only be lowercase
@@ -13,6 +12,12 @@ public class Isogram {
      * @return true if str is an isogram, false otherwise.
      */
     public boolean isIsogram(String str){
-        return false;
+        char arr[] = str.toCharArray();
+        for (char ch : arr) {
+            if(str.indexOf(ch) != str.lastIndexOf(ch)) {
+                return false;
+            }
+        }
+        return true;
     }
 }
